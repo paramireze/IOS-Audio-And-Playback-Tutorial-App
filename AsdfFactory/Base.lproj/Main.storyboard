@@ -18,21 +18,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8q-LR-GCz">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8q-LR-GCz">
+                                <rect key="frame" x="127.5" y="283.5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Syg-kk-3UW"/>
+                                    <constraint firstAttribute="height" constant="120" id="qxL-C7-tt7"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Record"/>
+                                <connections>
+                                    <action selector="startAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogs-h0-HCa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Recording, Bro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsw-69-cSl">
+                                <rect key="frame" x="109.5" y="411" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P6-KA-GgB">
+                                <rect key="frame" x="137" y="433" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cvj-Ix-s85"/>
+                                    <constraint firstAttribute="height" constant="100" id="pOe-A5-fLy"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Stop"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erh-dz-Lom"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lsw-69-cSl" firstAttribute="centerX" secondItem="Z8q-LR-GCz" secondAttribute="centerX" id="Ror-zY-gjk"/>
+                            <constraint firstItem="lsw-69-cSl" firstAttribute="top" secondItem="Z8q-LR-GCz" secondAttribute="bottom" constant="7.5" id="VZV-rY-giQ"/>
+                            <constraint firstItem="Z8q-LR-GCz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="q8f-aT-q51"/>
+                            <constraint firstItem="Z8q-LR-GCz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uiP-ty-XQP"/>
+                            <constraint firstItem="0P6-KA-GgB" firstAttribute="centerX" secondItem="lsw-69-cSl" secondAttribute="centerX" id="z60-e5-O3R"/>
+                            <constraint firstItem="0P6-KA-GgB" firstAttribute="top" secondItem="lsw-69-cSl" secondAttribute="bottom" constant="1" id="zCN-ne-FIb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="asdf" destination="Z8q-LR-GCz" id="ZKu-TC-ZgX"/>
+                        <outlet property="audioButtonLabel" destination="lsw-69-cSl" id="XO1-b8-Xjf"/>
+                        <outlet property="startAudio" destination="Z8q-LR-GCz" id="cGF-xQ-YpB"/>
+                        <outlet property="stopRecording" destination="0P6-KA-GgB" id="9Is-XC-R6j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Record" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
+    </resources>
 </document>
