@@ -44,6 +44,7 @@
                                 <state key="normal" backgroundImage="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erh-dz-Lom"/>
+                                    <segue destination="8yx-a2-D7d" kind="show" id="ayB-1x-6y2"/>
                                 </connections>
                             </button>
                         </subviews>
