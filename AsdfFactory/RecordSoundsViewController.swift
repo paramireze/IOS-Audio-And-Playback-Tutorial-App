@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController.swift
 //  AsdfFactory
 //
 //  Created by Ramirez Paul E on 5/24/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecordSoundsViewController: UIViewController {
 
     @IBOutlet weak var startAudio: UIButton!
     
