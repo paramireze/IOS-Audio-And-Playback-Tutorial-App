@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		10311C2B20B794B2002DB212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10311C2A20B794B2002DB212 /* AppDelegate.swift */; };
-		10311C2D20B794B2002DB212 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10311C2C20B794B2002DB212 /* RecordSoundsViewController.swift */; };
 		10311C3020B794B2002DB212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10311C2E20B794B2002DB212 /* Main.storyboard */; };
 		10311C3220B794B2002DB212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10311C3120B794B2002DB212 /* Assets.xcassets */; };
 		10311C3520B794B2002DB212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10311C3320B794B2002DB212 /* LaunchScreen.storyboard */; };
 		1053612F20B98ED900988AFE /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1053612E20B98ED900988AFE /* PlaySoundsViewController.swift */; };
+		1053613020BAE76400988AFE /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10311C2C20B794B2002DB212 /* RecordSoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10311C2D20B794B2002DB212 /* RecordSoundsViewController.swift in Sources */,
+				1053613020BAE76400988AFE /* RecordSoundsViewController.swift in Sources */,
 				1053612F20B98ED900988AFE /* PlaySoundsViewController.swift in Sources */,
 				10311C2B20B794B2002DB212 /* AppDelegate.swift in Sources */,
 			);
